@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<title>Recipes for Factory plugin of CivClassic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<style>
+    body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    	color: #333;
+    }
+    
+    h2 { border-bottom: 1px solid #eee; }
+    
+    table td { vertical-align: top; }
+    
+    div.main { margin:auto; width:1020px; }
+
+    table.recipe-list { border-collapse: collapse; border: 1px solid #ddd; width:100%; }
+    table.recipe-list > tbody > tr > td,
+    table.recipe-list > tbody > tr > th { border: 1px solid #ddd; padding:5px; margin:0px; }
+    table.recipe-list > tbody > tr:nth-child(even) { background-color: #F8F8F8; }
+    table.recipe-list > tbody > tr:nth-child(odd) { background-color: white; }
+    table.recipe-list > tbody > tr > td.input a,
+	table.recipe-list > tbody > tr > td.output a { text-decoration:none; color: #333; }
+    table.recipe-list > tbody > tr > td.input a:hover,
+	table.recipe-list > tbody > tr > td.output a:hover { text-decoration:underline; color: blue; }
+	table.recipe-list > tbody > tr > td ul { margin: 0; }
+
+    table.item-list td { text-align: center; min-width:50px;}
+    table.item-list td+td { text-align: left; min-width:0px; padding-right:15px; }
+    table.item-list td+td+td { padding-right: 0px; }
+
+    td.prod-time, td.weight { text-align:center; }
+    span.item-section { font-style: italic; }
+    div.factory-header div { float:left; }
+    div.factory-header div+div { float:left; padding-top:22px; padding-left:20px; }
+
+</style>
+</head>
+<body>
+<div class=main>
+<h1>Summary by Items</h1>
+<table class=recipe-list>
+<tr><th>Item</th><th>Where Produced</th><th>Where Used</th></tr>
+<tr>
+<td>
+<a id=any-normal-wood-log></a>
+Any Normal Wood Log
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=baked-potato></a>
+Baked Potato
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=bread></a>
+Bread
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=brick></a>
+Brick
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=cake></a>
+Cake
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=charcoal></a>
+Charcoal
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=clay-block></a>
+Clay Block
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=cobblestone></a>
+Cobblestone
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=cooked-fish></a>
+Cooked Fish
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=cooked-mutton></a>
+Cooked Mutton
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=cooked-porkchop></a>
+Cooked Porkchop
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=diamond></a>
+Diamond
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=diamond-boots></a>
+Diamond Boots
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=diamond-chestplate></a>
+Diamond Chestplate
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=diamond-helmet></a>
+Diamond Helmet
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=diamond-leggings></a>
+Diamond Leggings
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=diamond-sword></a>
+Diamond Sword
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=dragon's-breath></a>
+Dragon's Breath
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=egg></a>
+Egg
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=emerald></a>
+Emerald
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+<li>
+<a href='index.html#advanced-armorer'>
+Advanced Armorer
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-bars></a>
+Iron Bars
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-boots></a>
+Iron Boots
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-chestplate></a>
+Iron Chestplate
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-helmet></a>
+Iron Helmet
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-ingot></a>
+Iron Ingot
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-leggings></a>
+Iron Leggings
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=iron-sword></a>
+Iron Sword
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#primitive-armorer'>
+Primitive Armorer
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=milk-bucket></a>
+Milk Bucket
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=potato></a>
+Potato
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=pumpkin></a>
+Pumpkin
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=pumpkin-pie></a>
+Pumpkin Pie
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=raw-beef></a>
+Raw Beef
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=raw-chicken></a>
+Raw Chicken
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=raw-fish></a>
+Raw Fish
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=raw-mutton></a>
+Raw Mutton
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=raw-porkchop></a>
+Raw Porkchop
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=roast-chicken></a>
+Roast Chicken
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=steak></a>
+Steak
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#bricked-grill'>
+Bricked Grill
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=stone></a>
+Stone
+</td>
+<td class=output><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#null'>
+Basic Contraption
+</a>
+</li>
+<li>
+<a href='index.html#earthen-grill'>
+Earthen Grill
+</a>
+</li>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=sugar></a>
+Sugar
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td>
+<a id=wheat></a>
+Wheat
+</td>
+<td class=output><ul>
+</ul></td>
+<td class=input><ul>
+<li>
+<a href='index.html#earthen-oven'>
+Earthen Oven
+</a>
+</li>
+<li>
+<a href='index.html#bricked-oven'>
+Bricked Oven
+</a>
+</li>
+</ul></td>
+</tr>
+</table>
+<p>Generated on 2016-07-24 18:51:40</p>
+</div>
+</body>
+</html>
